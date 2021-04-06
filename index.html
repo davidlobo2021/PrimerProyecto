@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ingreso a sist de ARDILLA</title>
+    <!-- Include CSS File Here -->
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- Include JS File Here -->
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h2>VIP ACCESS</h2>
+        <form id="form_id" method="POST" action="/DoPost" name="myform">
+          <label>Nombre:</label>
+          <input type="text" name="username" id="username" required/>
+          <label>DNI :</label>
+          <input type="password" name="password" id="password" required/>
+          <input
+            type="button"
+            value="INGRESO"
+            id="submit" onclick="validate()"
+          />
+        </form>
+        <span
+          ><b class="note">Note : </b
+          ><b class="info">Para esta demo use los sig datos</b><br /><b
+            class="valid"
+            >Nombre: David<br />DNI : 12345</b
+          ></span
+        >
+      </div>
+    </div>
+  </body>
+</html>
